@@ -10,22 +10,22 @@ document.getElementById("num2-el").textContent = num2
 
 function add() {
     let result = num1 + num2
-    document.getElementById("sum-el").textContent = result
+    document.getElementById("sum-el").textContent = "Sum: " + result
 }
 
 function subtract() {
     let result = num1 - num2
-    document.getElementById("sum-el").textContent = result
+    document.getElementById("sum-el").textContent = "Sum: " + result
 }
 
 function divide() {
     let result = num1 / num2
-    document.getElementById("sum-el").textContent = result
+    document.getElementById("sum-el").textContent = "Sum: " + result
 }
 
 function multiply() {
     let result = num1 * num2
-    document.getElementById("sum-el").textContent = result
+    document.getElementById("sum-el").textContent = "Sum: " + result
 }
 
 // E.g. if the user clicks on the "Plus" button, you should render
