@@ -8,6 +8,11 @@ let leadsFromLocalStorage = JSON.parse( localStorage.getItem("myLeads") )
 // 1. Check if leadsFromLocalStorage is truthy
 // 2. If so, set myLeads to its value and call renderLeads()
 
+if(leadsFromLocalStorage) {
+    myLeads = leadsFromLocalStorage
+    renderLeads()
+}
+
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
     inputEl.value = ""
@@ -20,7 +25,7 @@ function renderLeads() {
     for (let i = 0; i < myLeads.length; i++) {
         listItems += `
             <li>
-                <a target='_blank' href='${myLeads[i]}'>
+                <a target='_blank' href='https://${myLeads[i]}'>
                     ${myLeads[i]}
                 </a>
             </li>
