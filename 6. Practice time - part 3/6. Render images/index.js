@@ -18,7 +18,7 @@ function render(imgs) {
         strings += `<img alt = "Employee in the company" class="team-img" src="${imgs[i]}">`
     }
 
-    divs.innerHTML = strings 
+    divs.innerHTML = strings
 }
 
 render(imgs)
